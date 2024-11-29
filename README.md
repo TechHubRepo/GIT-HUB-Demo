@@ -1,6 +1,6 @@
 # GIT-HUB-Demo
 
-GIT-HUB-Demo is a sample project to illustrate that how we should used git in our project work.
+GIT HUB Demo is a sample project to illustrate that how we should used git in our project work.
 
 # Table of Content
 
@@ -24,20 +24,80 @@ This module requires the following modules:
 
 ## Installation
 
-```sh
+```shell
  $ sudo apt-get update
- $ sudo install openjdk21 -y
+ $ sudo apt install openjdk-21-jdk -y
+ $ sudo apt install nodejs -y
 ```
 
 ## Configuration
 
-```java
-import java.util.List;
+### Java Configuration
 
+```java
+package com.techhub.demo.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
 public class SpringConfiguration{
 
+    @Bean
+    public String myBean(){
+        return "Hello World";
+    }
 }
 ```
+
+### JavaScript Configuration
+
+```javascript
+use 'strict'
+
+let CONFIG = {
+    String myBean = "Hello World";
+}
+```
+
+### Python Configuration
+
+```python
+class Config:
+  def __init__(self, message):
+    self.message = message
+
+cnf = Config("Hello World")
+```
+
+### System Configuration
+
+1. Go to Administration » Configuration » Content authoring » Text formats
+   and editors
+1. Edit a text format, for example "Basic HTML"
+1. Enable a Glossify filter and configure it under "Filter settings"
+
+## FAQ
+
+**Q: I want to prevent robots from indexing my custom error pages by
+setting the robots meta tag in the HTML head to "noindex".**
+
+**A:** There is no need to. **Customerror** returns the correct HTTP
+status codes (403 and 404). This will prevent robots from indexing the
+error pages.
+
+**Q: I want to customize the custom error template output.**
+
+**A:** In your theme template folder for your site, copy the template
+provided by the **Customerror** module
+(i.e. `templates/customerror.html.twig`) and then make your
+modifications there.
+
+**Q: I want to have a different template for my 404 and 403 pages.**
+
+**A:** Copy `customerror.html.twig` to
+`customerror--404.html.twig` and `customerror--403.html.twig`. You
+do not need a `customerror.html.twig` for this to work.
 
 ## References
 
