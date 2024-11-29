@@ -112,15 +112,10 @@ Strikethrough = ~~text~~
 
 ## References
 
-- [TechHub]
-- [Drupal]
-- [ReadMe]
+- [ ] [TechHub]
+- [x] [Drupal]
+- [x] [ReadMe]
 
 [TechHub]: https://www.youtube.com/@TechEduHub
 [Drupal]: https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/documenting-your-project/readmemd-template
 [ReadMe]: https://github.com/othneildrew/Best-README-Template/blob/main/README.md
-
-# Demo
-
-- [ ] A
-- [x] B
