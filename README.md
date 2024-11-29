@@ -9,6 +9,7 @@ GIT HUB Demo is a sample project to illustrate that how we should used git in ou
 - Installation
 - Configuration
 - FAQ
+- How to Do?
 - References
 
 ## Introduction to Project
@@ -24,7 +25,7 @@ This module requires the following modules:
 
 ## Installation
 
-```shell
+```sh
  $ sudo apt-get update
  $ sudo apt install openjdk-21-jdk -y
  $ sudo apt install nodejs -y
@@ -53,7 +54,7 @@ public class SpringConfiguration{
 ### JavaScript Configuration
 
 ```javascript
-use 'strict'
+'use strict';
 
 let CONFIG = {
     String myBean = "Hello World";
@@ -99,6 +100,22 @@ modifications there.
 `customerror--404.html.twig` and `customerror--403.html.twig`. You
 do not need a `customerror.html.twig` for this to work.
 
+## How to Do?
+
+Simple Text = Text
+
+Italic text = _text_
+
+Bold text = **text**
+
+Strikethrough = ~~text~~
+
 ## References
 
-[Drupal](https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/documenting-your-project/readmemd-template)
+- [TechHub]
+- [Drupal]
+- [ReadMe]
+
+[TechHub]: https://www.youtube.com/@TechEduHub
+[Drupal]: https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/documenting-your-project/readmemd-template
+[ReadMe]: https://github.com/othneildrew/Best-README-Template/blob/main/README.md
