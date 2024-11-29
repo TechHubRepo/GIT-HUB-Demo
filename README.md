@@ -8,6 +8,9 @@ GIT HUB Demo is a sample project to illustrate that how we should used git in ou
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Configuration](#configuration)
+  - Java Configuration
+  - JavaScript Configuration
+  - Python Configuration
 - [FAQ](#faq)
 - [How to Do?](#howtodo)
 - [References](#references)
