@@ -1,0 +1,50 @@
+plugins {
+    /* Java Plugin */
+    id 'java'
+
+    /* Application Plugin */
+    id 'application'
+}
+
+/* Variable Declaration */
+def mainClassName = 'com.techhub.github.demo.Start'
+
+group = 'com.techhub.github.demo'
+version = '1.0.0'
+
+application {
+
+    /* Main class name configuration */
+    mainClass = mainClassName
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+/* Build JAR Configuration */
+jar {
+
+    /* The Manifest file Configuration */
+    manifest {
+        attributes(
+                'Main-Class': mainClassName
+        )
+    }
+
+    /* JAR Dependency from classpath Configuration */
+    from {
+        duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
